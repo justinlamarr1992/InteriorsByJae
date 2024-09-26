@@ -28,6 +28,42 @@ function doModal(anchor, popupbox) {
   });
 }
 
+// Hero SlideShow
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("hero-image");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Hero SlideShow
+var slideIndex2 = 0;
+carousel2();
+
+function carousel2() {
+  var i;
+  var x = document.getElementsByClassName("client-web");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > x.length) {
+    slideIndex2 = 1;
+  }
+  x[slideIndex2 - 1].style.display = "block";
+  setTimeout(carousel2, 4000);
+}
+
 // Team
 function changeToMember1() {
   var mem1 = document.getElementById("team-pic-mem1");
