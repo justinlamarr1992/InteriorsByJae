@@ -1,89 +1,467 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Interiors By Jae</title>
+    <meta name="title" content="Interiors By Jae" />
+    <meta name="description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neworleansdrivewaycleaning.com/" />
+    <meta property="og:title" content="Interiors By Jae" />
+    <meta property="og:description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+    <meta property="og:image" content="./images/Logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://creativecakeballs.com/" />
+    <meta property="twitter:title" content="Interiors By Jae" />
+    <meta property="twitter:description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+    <meta property="twitter:image" content="./images/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interiors By Jae</title>
+    <script src="https://kit.fontawesome.com/a3c1e4db5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap"
+        rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-J80VK37RET"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-J80VK37RET");
+    </script> -->
+
+    <script src="https://kit.fontawesome.com/a3c1e4db5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
 
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.13.2/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.13.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.13.2/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Pgda0SrW7anP3qk_-");
+        })();
     </script>
-  </body>
+    <!-- TEST -->
+    <script type="text/javascript">
+        window.onload = function () {
+            document
+                .getElementById("cta-form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = (Math.random() * 100000) | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm("service_45a7b4k", "template_3jebmw9", this).then(
+                        function () {
+                            console.log("SUCCESS!");
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );
+                });
+        };
+    </script>
+    <!-- TEST -->
+</head>
+
+<body>
+    <header class="" id="myNavBar">
+        <div class="header-container navbar">
+            <a href="#hero" class="active logo">
+                <h3 class="logo-text">Interiors By Jae</h3>
+                <!-- <img class="logo" src="./images/Logo_NoBack.png" alt="" /> -->
+            </a>
+            <a href="#" class="toggle-button">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <nav class="navbar-links">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Our Team</a></li>
+                    <li><a href="staging.html">Staging</a></li>
+                    <!-- TODO: Change gallery link to staging page-->
+                </ul>
+            </nav>
+            <a href="#cta">
+                <button class="header-cta-button">Contact Us</button>
+                <!--TODO: Change to the contact PAge -->
+            </a>
+        </div>
+    </header>
+    <div id="overlay"><!-- Overlay for dimming screen with Modal --></div>
+    <div id="hero">
+        <img class="hero-image" src="./assets/images/EssexSt-5.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/House1-8.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/PriscillaLn-5.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/OakhillDr-8.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/CrouseDr16.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/House5-9.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/FrazierAve18.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/EssexSt-12.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/EssexSt-43.jpg" alt="Hero Staging" />
+        <img class="hero-image" src="./assets/images/WestCrossland9.jpg" alt="Hero Staging" />
+
+        <div class="hero-container">
+            <div class="hero-left">
+                <h1 class="hero-title">Transforming Spaces, Elevating Style</h1>
+                <h5 class="hero-description">
+                    At Interiors by Jae, we specialize in creating unique, sophisticated
+                    spaces that reflect your personal style and elevate your everyday
+                    living.
+                </h5>
+            </div>
+            <div class="hero-right">
+                <div class="hero-cta">
+                    <h5 class="hero-cta-title">Start Here</h5>
+                    <input class="hero-cta-input" type="text" placeholder="Name*" required />
+                    <input class="hero-cta-input" type="tel" placeholder="Phone*" required />
+                    <input class="hero-cta-input" type="email" placeholder="Email*" required />
+                    <button class="hero-cta-button">Contact Us</button>
+                    <!-- Create EmailJS link for button Press -->
+                    <h6 class="hero-cta-warning">* - required</h6>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-container">
+            <h3 class="about-title">Our Values</h3>
+            <h5 class="about-description">
+                "Transforming Spaces with Heart: InteriorsByJae, a Black-owned family
+                business in the DFW metroplex, specializes in renovating, remodeling,
+                and staging homes with a personal touch."
+            </h5>
+            <div class="about-values">
+                <div class="about-values-1">
+                    <img class="about-values-img" src="./assets/images/EssexSt-6.jpg" alt="" />
+                    <h5 class="about-values-belief">Belief Here</h5>
+                    <h6 class="about-values-adjective">Belief Adjective</h6>
+                </div>
+                <div class="about-values-2">
+                    <img class="about-values-img" src="./assets/images/FrazierAve9.jpg" alt="" />
+                    <h5 class="about-values-belief">Belief Here</h5>
+                    <h6 class="about-values-adjective">Belief Adjective</h6>
+                </div>
+                <div class="about-values-3">
+                    <img class="about-values-img" src="./assets/images/CrouseDr21.jpg" alt="" />
+                    <h5 class="about-values-belief">Belief Here</h5>
+                    <h6 class="about-values-adjective">Belief Adjective</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog">
+        <div class="blog-container">
+            <h3 class="blog-title">News Articles</h3>
+            <h5 class="blog-description">
+                Here are some of the articles InteriorsByJae have been featured in!
+            </h5>
+            <div class="blogs">
+                <a class="blog-1" target="_blank"
+                    href="https://www.businessinsider.com/how-to-finance-house-flip-money-purchase-repairs-home-flipping-2023-8">
+                    <img class="blogs-img" src="./assets/images/businessInsider1.jpg" alt="" />
+                    <h5 class="blogs-title">
+                        Jokeeta and Donte Marzett make tens of thousands of dollars on
+                        every home they flip. They share how they finance their home
+                        purchases and remodels — and how to mitigate risks associated with
+                        flipping.
+                    </h5>
+                    <div class="blogs-info">
+                        <h6 class="blogs-author">William Edwards</h6>
+                        <h6 class="blogs-date">Aug 4, 2023, 3:00 AM</h6>
+                    </div>
+                </a>
+                <a class="blog-2" target="_blank"
+                    href="https://www.businessinsider.com/home-flipping-before-and-after-photos-property-renovations-brrrr-2023-8">
+                    <img class="blogs-img" src="./assets/images/businessInsider2.jpg" alt="" />
+                    <h5 class="blogs-title">
+                        'Make an Instagram house': A home-flipping couple shares 15
+                        before-and-after photos highlighting the property renovations that
+                        have earned them tens of thousands of dollars in profits
+                    </h5>
+                    <div class="blogs-info">
+                        <h6 class="blogs-author">William Edwards</h6>
+                        <h6 class="blogs-date">Aug 15, 2023, 3:00 AM</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="team">
+        <div class="team-container">
+            <h3 class="team-title">Meet InteriorsByJae</h3>
+            <h5 class="team-description">
+                Meet the team behind InteriorsByJae. Dedicated to transforming DFW
+                homes with exceptional style and expertise.
+            </h5>
+            <div class="team-member member-1" id="clickMe1">
+                <img id="team-pic-mem1" class="member-pic displayBlock" src="./assets/images/Team1.png"
+                    alt="Img of Jae" />
+                <div class="member-info">
+                    <h4 class="member-name">Jae</h4>
+                    <h6 class="member-role text-gray">Founder</h6>
+                    <h5 class="member-description">
+                        Jae is the visionary behind Interiors by Jae, specializing in
+                        remodeling, staging, and renovation across the DFW Metroplex. With
+                        a passion for design, she transforms spaces into stunning,
+                        functional environments tailored to her clients' needs.
+                    </h5>
+                    <div class="member-social">
+                        <a href="https://www.facebook.com/profile.php?id=100086960268323" target="_blank"><i
+                                class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/chriscreativecakeballs/" target="_blank"><i
+                                class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.instagram.com/chriscreativecakeballs/" target="_blank"><i
+                                class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="team-member member-2" id="clickMe2" onclick="changeToMember2()">
+                <i class="fas fa-user-circle fa-4x member-mini-pic"></i>
+                <h4 class="member-name">Patrick</h4>
+                <h6 class="member-role text-gray">Founder</h6>
+                <div class="member-social">
+                    <a href="https://www.facebook.com/profile.php?id=100086960268323" target="_blank"><i
+                            class="fab fa-facebook fa-lg"></i></a>
+                </div>
+            </div> -->
+
+            <!-- <img id="team-pic-mem2" class="member-big-pic displayNone" src="./images/Team2.png" alt="Img of Patrick" /> -->
+        </div>
+    </div>
+    <!-- <div id="gallery">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Our Work</h2>
+            <h5 class="gallery-description">
+                Here is some of the work we have done!
+            </h5>
+            <div class="gallery-pictures">
+                <img class="gallery-pic gallery-1" src="./images/Gallery1.png" alt="Gallery1" />
+                <img class="gallery-pic gallery-2" src="./images/Gallery2.png" alt="Gallery2" />
+                <img class="gallery-pic gallery-3" src="./images/Gallery3.png" alt="Gallery3" />
+                <img class="gallery-pic gallery-4" src="./images/Gallery4.png" alt="Gallery4" />
+                <img class="gallery-pic gallery-5" src="./images/Gallery5.png" alt="Gallery5" />
+                <img class="gallery-pic gallery-6" src="./images/Gallery6.png" alt="Gallery6" />
+                <img class="gallery-pic gallery-7" src="./images/Gallery7.png" alt="Gallery7" />
+            </div>
+        </div>
+    </div> -->
+    <div id="testimony">
+        <div class="testimony-container">
+            <h2 class="test-title">Reviews</h2>
+            <p class="test-text">
+                Here is some of the work InteriorsByJae has done in the past.
+            </p>
+            <div class="test-clients">
+                <div class="client c-top">
+                    <!-- <img src="./images/iWax.png" class="client-pic" alt="" /> -->
+                    <h5 class="client-text">Lets get some Testimonies in here</h5>
+                    <h5 class="client-name">Customer name</h5>
+                </div>
+                <div class="client c-bottom">
+                    <!-- <img src="./images/yourcompany.png" class="client-pic" alt="" /> -->
+                    <h5 class="client-text">"This could be your comment here!"</h5>
+                    <h5 class="client-name">Customer NAme</h5>
+                </div>
+            </div>
+        </div>
+        <img class="client-web" src="./assets/images/WestCrossland17.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/WestCrossland13.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/EssexSt-18.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/EssexSt-11.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/FrazierAve17.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/House5-3.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/CrouseDr6.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/OakhillDr-15.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/PriscillaLn-12.jpg" alt="Review image" />
+        <img class="client-web" src="./assets/images/House1-13.jpg" alt="Review image" />
+
+
+
+    </div>
+    <!-- <div id="price">
+        <div class="price-container">
+            <h2 class="price-title">Services</h2>
+            <p class="price-description">
+                Although we specialize in driveway cleaning, we also offer various
+                pressure washing services! Here is a list of what we offer but we are
+                open to special requests! Prices vary based on size, location and
+                condition.
+            </p>
+            <div class="price-block price-1">
+                <h4 class="price-block-title">Basic Driveway</h4>
+                <div class="price-block-price">
+                    <h6 class="price-block-price-description">Starting at</h6>
+                    <h3 class="price-block-price-price">$295</h3>
+                </div>
+                <div class="price-block-description">
+                    <h6>Sidewalk Cleaning</h6>
+                    <h6>Walkway Cleaning</h6>
+                    <h6>Porch Cleaning</h6>
+                    <h6>Sodium Hypochlorite (Concrete)</h6>
+                </div>
+                <button class="price-block-button">
+                    <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+                </button>
+            </div>
+
+            <div class="price-block price-2">
+                <h4 class="price-block-title">Additional</h4>
+                <div class="price-block-price">
+                    <h3 class="price-block-price-price">Contact for Pricing</h3>
+                </div>
+                <div class="price-block-description description-2">
+                    <h6>House Washing</h6>
+                    <h6>Fence Cleaning</h6>
+                    <h6>Deck Washing</h6>
+                    <h6>Commercial Parking Lot</h6>
+                </div>
+                <button class="price-block-button button-2">
+                    <a href="#cta" class="price-block-price-price-link">Contact Us</a>
+                </button>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="cta">
+        <div class="cta-container">
+            <h2 class="cta-title">Contact Us</h2>
+            <h5 class="cta-description">
+                Contact us for a free estimate. We generally use google earth for our
+                estimates so please include what you would like the quote for as well
+                as the address.
+            </h5>
+            <form class="cta-form" id="cta-form">
+                <input type="hidden" name="contact_number" />
+                <div class="cta-form-name">
+                    <label>
+                        <h5>Name</h5>
+                    </label>
+                    <input name="name" class="cta-form-name-input" type="text" placeholder="Enter Name Here" required />
+                </div>
+                <div class="cta-form-email">
+                    <label>
+                        <h5>Email</h5>
+                    </label>
+                    <input name="email" class="cta-form-email-input" type="email" placeholder="Enter Email Here"
+                        required />
+                </div>
+                <div class="cta-form-phone">
+                    <label>
+                        <h5>Phone Number</h5>
+                    </label>
+                    <input name="phone" class="cta-form-phone-input" type="tel" placeholder="Enter Phone Number Here"
+                        required />
+                </div>
+                <div class="cta-form-message">
+                    <label>
+                        <h5>What Do You Need Done and Address?</h5>
+                    </label>
+                    <textarea name="message" class="cta-form-message-input" rows="5" cols="33"
+                        placeholder="What would you Like me to Know?">
+            </textarea>
+                </div>
+                <input class="cta-form-submit" type="submit" value="Contact Us" />
+            </form>
+            <div class="cta-info-word">
+                <h3 class="cta-info-word-area">
+                    Greater New Orleans Metropolitan Area
+                </h3>
+                <a class="cta-info-word-phone" href="tel:+1(504)405-2093">
+                    <h4>(504) 405-2093</h4>
+                </a>
+                <a href="mailto:nodrivewaycleaners@gmail.com" class="cta-info-word-email">
+                    <h4>nodrivewaycleaners@gmail.com</h4>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <footer>
+        <!-- Company Name and Copyright here -->
+        <div class="footer-container">
+            <div class="foot-first">
+                <h3 class="logo">InteriorsByJae</h3>
+                <!-- <img class="logo" src="./images/Logo_NoBack.png" alt="" /> -->
+                <h6 class="footer-disclaimer">
+                    © Copyright 2024 InteriorsByJae All Right Reserved.
+                </h6>
+            </div>
+            <div class="foot-second">
+                <h6 class="footer-info-word">Dallas/Fort Worth Metroplex</h6>
+                <a class="footer-info-word" href="tel:+1(817)845-7247">(817) 845-7247</a>
+
+                <a href="mailto:Interiorsbyjae@gmail.com" class="footer-info-word">InteriorsByJae@gmail.com</a>
+            </div>
+            <a class="foot-third" href="https://www.justappin.com" target="_blank">
+                <img src="./assets/images/JustAppinLogo.png" alt="JustAPPin' Logo" class="footer-image" />
+                <h6 class="justappin">This Website Was Made by JustAPPin' LLC</h6>
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDh-pg_3HImQ6_IBAwa0STjUiaJ2mR9niY",
+            authDomain: "interiorsbyjae-4835e.firebaseapp.com",
+            projectId: "interiorsbyjae-4835e",
+            storageBucket: "interiorsbyjae-4835e.appspot.com",
+            messagingSenderId: "606741097225",
+            appId: "1:606741097225:web:5bbe8e1a7cbef6100f81d8",
+            measurementId: "G-KWFP1Q3DD7",
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Emailjs Code -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Pgda0SrW7anP3qk_-",
+            });
+        })();
+    </script>
+</body>
+
 </html>

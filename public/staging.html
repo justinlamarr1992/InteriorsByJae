@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Interiors By Jae Staging Photos</title>
+    <meta name="title" content="Interiors By Jae" />
+    <meta name="description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neworleansdrivewaycleaning.com/" />
+    <meta property="og:title" content="Interiors By Jae" />
+    <meta property="og:description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+    <meta property="og:image" content="./images/Logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://creativecakeballs.com/" />
+    <meta property="twitter:title" content="Interiors By Jae" />
+    <meta property="twitter:description"
+        content="We Offer quality Driveway Cleaning and pressure washing services. Let us transform your home or business!" />
+    <meta property="twitter:image" content="./images/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interiors By Jae</title>
+    <script src="https://kit.fontawesome.com/a3c1e4db5c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap"
+        rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-J80VK37RET"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-J80VK37RET");
+    </script> -->
+
+    <script src="https://kit.fontawesome.com/a3c1e4db5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Pgda0SrW7anP3qk_-");
+        })();
+    </script>
+    <!-- TEST -->
+    <script type="text/javascript">
+        window.onload = function () {
+            document
+                .getElementById("cta-form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = (Math.random() * 100000) | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm("service_45a7b4k", "template_3jebmw9", this).then(
+                        function () {
+                            console.log("SUCCESS!");
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                        }
+                    );
+                });
+        };
+    </script>
+    <!-- TEST -->
+</head>
+
+<body>
+    <header class="" id="myNavBar">
+        <div class="header-container navbar">
+            <a href="#hero" class="active logo">
+                <h3 class="logo-text">Interiors By Jae</h3>
+                <!-- <img class="logo" src="./images/Logo_NoBack.png" alt="" /> -->
+            </a>
+            <a href="#" class="toggle-button">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <nav class="navbar-links">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Our Team</a></li>
+                    <li><a href="staging.html">Staging</a></li>
+                    <!-- TODO: Change gallery link to staging page-->
+                </ul>
+            </nav>
+            <a href="#cta">
+                <button class="header-cta-button">Contact Us</button>
+                <!--TODO: Change to the contact PAge -->
+            </a>
+        </div>
+    </header>
+
+    <footer>
+        <!-- Company Name and Copyright here -->
+        <div class="footer-container">
+            <div class="foot-first">
+                <h3 class="logo">InteriorsByJae</h3>
+                <!-- <img class="logo" src="./images/Logo_NoBack.png" alt="" /> -->
+                <h6 class="footer-disclaimer">
+                    © Copyright 2024 InteriorsByJae All Right Reserved.
+                </h6>
+            </div>
+            <div class="foot-second">
+                <h6 class="footer-info-word">Dallas/Fort Worth Metroplex</h6>
+                <a class="footer-info-word" href="tel:+1(817)845-7247">(817) 845-7247</a>
+
+                <a href="mailto:Interiorsbyjae@gmail.com" class="footer-info-word">InteriorsByJae@gmail.com</a>
+            </div>
+            <a class="foot-third" href="https://www.justappin.com" target="_blank">
+                <img src="./assets/images/JustAppinLogo.png" alt="JustAPPin' Logo" class="footer-image" />
+                <h6 class="justappin">This Website Was Made by JustAPPin' LLC</h6>
+            </a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDh-pg_3HImQ6_IBAwa0STjUiaJ2mR9niY",
+            authDomain: "interiorsbyjae-4835e.firebaseapp.com",
+            projectId: "interiorsbyjae-4835e",
+            storageBucket: "interiorsbyjae-4835e.appspot.com",
+            messagingSenderId: "606741097225",
+            appId: "1:606741097225:web:5bbe8e1a7cbef6100f81d8",
+            measurementId: "G-KWFP1Q3DD7",
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Emailjs Code -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Pgda0SrW7anP3qk_-",
+            });
+        })();
+    </script>
+</body>
+
+</html>

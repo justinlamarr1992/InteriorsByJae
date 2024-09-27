@@ -1764,7 +1764,7 @@ body {
     }
 
     h3 {
-        font-size: var(--mh1);
+        font-size: var(--mh3);
     }
 
 
@@ -1824,24 +1824,64 @@ body {
         padding: var(--m-padding);
     }
 
+    #about {
+        grid-template-columns: var(--mcol);
+        grid-template-rows: var(--wrow);
+    }
+
     /* About Section */
     .about-container {
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-column: 2/3;
     }
 
     .about-title {
-        justify-self: start;
+        align-self: start;
         text-align: left;
     }
 
     .about-description {
-        grid-column: 1/4;
-        justify-self: start;
+        align-self: start;
         text-align: left;
+        padding: 0 0 20px 0;
+    }
+
+    .about-values {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .about-values-1,
+    .about-values-2,
+    .about-values-3 {
+        width: 100%;
+        padding-bottom: 20px;
     }
 
     .about-button {
         justify-self: start;
+    }
+
+    /* Blog Section */
+    #blog {
+        grid-template-columns: var(--mcol);
+        grid-template-rows: var(--mrow);
+    }
+
+    .blog-description {
+        padding-bottom: 20px;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-1,
+    .blog-2 {
+        width: 100%;
+        padding-bottom: 20px;
     }
 
     /* Gallery Section */
@@ -1920,67 +1960,74 @@ body {
 
     /* Team Section */
     .team-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        row-gap: var(--r-gap);
+        column-gap: 0;
+        row-gap: 0;
     }
 
     .team-title {
-        padding-right: 0;
-    }
-
-    .team-description {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        align-self: center;
-        padding-right: 0;
-    }
-
-    .member-big-pic {
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .member-1 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .member-2 {
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .team-member {
-        grid-template-columns: 30% 70%;
-        padding: var(--bm-padding);
-    }
-
-    /* Testiomony Section */
-    .testimony-title {
-        justify-self: start;
-        align-self: center;
-        text-align: start;
-    }
-
-    .testimony-description {
-        justify-self: start;
+        align-self: flex-start;
         text-align: left;
     }
 
-    .testimonials {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: var(--r-gap);
+    .team-description {
+        align-self: flex-start;
+        text-align: left;
+        padding: 0 0 20px 0;
     }
 
-    .testimony-block {
-        max-height: 375px;
+    .team-member {
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: var(--brad);
+        border: 2px solid var(--pri-c);
         width: 100%;
     }
 
-    .test-user {
-        grid-template-columns: 30% 70%;
+    .member-pic {
+        width: 100%;
+    }
+
+    .member-info {
+        width: 100%;
+    }
+
+    .member-name {
+        padding: 20px 0;
+    }
+
+    .member-social {
+        padding-bottom: 20px;
+    }
+
+    /* Testiomony Section */
+    #testimony {
+        grid-template-rows: 20px auto auto 20px;
+        grid-template-columns: var(--mcol);
+    }
+
+    .testimony-container {
+        padding: var(--mpad);
+    }
+
+    .test-text {
+        padding: 0 0 20px 0;
+    }
+
+    .c-top,
+    .c-bottom {
+        padding: 0 0 20px 0;
+    }
+
+    .client-text {
+        align-self: flex-start;
+    }
+
+    .client-web {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        align-self: stretch;
+        width: 100%;
+
     }
 
     /* Price Section */
