@@ -204,7 +204,7 @@ body {
         height: 48px;
         line-height: 24px;
         padding: 9px 25px;
-        width: 170px;
+        /* width: 170px; */
     }
 
     button:hover,
@@ -567,6 +567,7 @@ body {
     .header-cta-button {
         margin-left: 20px;
         background: var(--c-gradient-lat);
+        width: 170px;
         /* background-color: orange; */
     }
 
@@ -1267,7 +1268,8 @@ body {
 
         grid-template-columns: var(--wcol);
         grid-template-rows: var(--wrow);
-        background-image: var(--c-background-up);
+        /* min-height: 100vh; */
+        padding-top: 80px;
     }
 
     /* .cta-container {
@@ -1298,16 +1300,8 @@ body {
   }
   */
     .cta-container {
-        background-color: var(--pri-c);
-        border-radius: var(--brad);
-        padding: var(--b-padding);
-        width: auto;
         grid-column: 2/3;
         grid-row: 2/3;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        box-shadow: var(--box-shadow);
     }
 
     .cta-title {
@@ -1452,6 +1446,10 @@ body {
         text-decoration: none;
         color: var(--qua-t);
         text-align: center;
+    }
+
+    .footer-cta {
+        height: 1%;
     }
 
     /* Modal Test */

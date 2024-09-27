@@ -62,34 +62,30 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- EmailJS CODE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("Pgda0SrW7anP3qk_-");
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "Cw5Kw5QE1OPze6sWA",
+            });
         })();
     </script>
-    <!-- TEST -->
     <script type="text/javascript">
         window.onload = function () {
-            document
-                .getElementById("cta-form")
-                .addEventListener("submit", function (event) {
-                    event.preventDefault();
-                    // generate a five digit number for the contact_number variable
-                    this.contact_number.value = (Math.random() * 100000) | 0;
-                    // these IDs from the previous steps
-                    emailjs.sendForm("service_45a7b4k", "template_3jebmw9", this).then(
-                        function () {
-                            console.log("SUCCESS!");
-                        },
-                        function (error) {
-                            console.log("FAILED...", error);
-                        }
-                    );
-                });
-        };
+            document.getElementById('cta-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ymb5nti', 'template_byi554i', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
     </script>
-    <!-- TEST -->
 </head>
 
 <body>
@@ -110,7 +106,7 @@
                     <!-- TODO: Change gallery link to staging page-->
                 </ul>
             </nav>
-            <a href="#cta">
+            <a href="cta.html">
                 <button class="header-cta-button">Contact Us</button>
                 <!--TODO: Change to the contact PAge -->
             </a>
@@ -139,15 +135,17 @@
                 </h5>
             </div>
             <div class="hero-right">
-                <div class="hero-cta">
+                <form class="hero-cta" id='cta-form'>
                     <h5 class="hero-cta-title">Start Here</h5>
-                    <input class="hero-cta-input" type="text" placeholder="Name*" required />
-                    <input class="hero-cta-input" type="tel" placeholder="Phone*" required />
-                    <input class="hero-cta-input" type="email" placeholder="Email*" required />
-                    <button class="hero-cta-button">Contact Us</button>
+                    <input class="hero-cta-input" type="text" placeholder="Name*" name="name" required />
+                    <input class="hero-cta-input" type="tel" placeholder="Phone*" name="phone" required />
+                    <input class="hero-cta-input" type="email" placeholder="Email*" name="email" required />
+                    <!-- <button class="hero-cta-button">Contact Us</button> -->
+                    <input class="hero-cta-button" type="submit" value="Contact Us" />
                     <!-- Create EmailJS link for button Press -->
                     <h6 class="hero-cta-warning">* - required</h6>
-                </div>
+                    <input type="hidden" name="contact_number" />
+                </form>
             </div>
 
 
@@ -352,59 +350,6 @@
             </div>
         </div>
     </div> -->
-    <!-- <div id="cta">
-        <div class="cta-container">
-            <h2 class="cta-title">Contact Us</h2>
-            <h5 class="cta-description">
-                Contact us for a free estimate. We generally use google earth for our
-                estimates so please include what you would like the quote for as well
-                as the address.
-            </h5>
-            <form class="cta-form" id="cta-form">
-                <input type="hidden" name="contact_number" />
-                <div class="cta-form-name">
-                    <label>
-                        <h5>Name</h5>
-                    </label>
-                    <input name="name" class="cta-form-name-input" type="text" placeholder="Enter Name Here" required />
-                </div>
-                <div class="cta-form-email">
-                    <label>
-                        <h5>Email</h5>
-                    </label>
-                    <input name="email" class="cta-form-email-input" type="email" placeholder="Enter Email Here"
-                        required />
-                </div>
-                <div class="cta-form-phone">
-                    <label>
-                        <h5>Phone Number</h5>
-                    </label>
-                    <input name="phone" class="cta-form-phone-input" type="tel" placeholder="Enter Phone Number Here"
-                        required />
-                </div>
-                <div class="cta-form-message">
-                    <label>
-                        <h5>What Do You Need Done and Address?</h5>
-                    </label>
-                    <textarea name="message" class="cta-form-message-input" rows="5" cols="33"
-                        placeholder="What would you Like me to Know?">
-            </textarea>
-                </div>
-                <input class="cta-form-submit" type="submit" value="Contact Us" />
-            </form>
-            <div class="cta-info-word">
-                <h3 class="cta-info-word-area">
-                    Greater New Orleans Metropolitan Area
-                </h3>
-                <a class="cta-info-word-phone" href="tel:+1(504)405-2093">
-                    <h4>(504) 405-2093</h4>
-                </a>
-                <a href="mailto:nodrivewaycleaners@gmail.com" class="cta-info-word-email">
-                    <h4>nodrivewaycleaners@gmail.com</h4>
-                </a>
-            </div>
-        </div>
-    </div> -->
 
     <footer>
         <!-- Company Name and Copyright here -->
@@ -451,16 +396,6 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-    </script>
-
-    <!-- Emailjs Code -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "Pgda0SrW7anP3qk_-",
-            });
-        })();
     </script>
 </body>
 
