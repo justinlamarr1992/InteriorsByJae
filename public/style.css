@@ -1310,6 +1310,10 @@ body {
         width: 35%;
     }
 
+    .cta-right {
+        width: 100%
+    }
+
     .cta-title {
         color: var(--pri-t);
 
@@ -1322,6 +1326,13 @@ body {
         grid-row: 2/3;
         justify-self: center;
         padding: 0 150px;
+    }
+
+    .cta-form-top {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .cta-form {
