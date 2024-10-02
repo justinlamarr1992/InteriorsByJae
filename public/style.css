@@ -1336,19 +1336,20 @@ body {
     }
 
     .cta-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        row-gap: var(--r-gap);
-        column-gap: var(--c-gap);
-        color: var(--sec-t);
+        display: flex;
+        flex-direction: column;
         padding-top: 25px;
+        width: 100%;
     }
 
-    .cta-form input,
+
     .cta-form textarea {
         width: 100%;
     }
+
+    /* .cta-form input {
+        width: 100%;
+    } */
 
     .cta-form-name {
         width: 100%;
