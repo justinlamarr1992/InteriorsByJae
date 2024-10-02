@@ -2134,7 +2134,8 @@ body {
 
     #cta {
         grid-template-rows: var(--mrow);
-        padding-top: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .cta-container {
@@ -2149,9 +2150,15 @@ body {
         flex-direction: column;
     }
 
+
     .cta-form-input {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer-cta {
+        position: relative;
     }
 
 }
