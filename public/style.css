@@ -571,6 +571,10 @@ body {
         /* background-color: orange; */
     }
 
+    .mobile-link {
+        display: none;
+    }
+
     .toggle-button {
         color: var(--pri-c);
         position: absolute;
@@ -1315,7 +1319,7 @@ body {
     }
 
     .cta-title {
-        color: var(--pri-t);
+        color: var(--pri-c);
 
     }
 
@@ -1333,52 +1337,26 @@ body {
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .cta-form-input {
+        width: 30%;
+    }
+
+    .cta-form-bottom {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .cta-form {
         display: flex;
         flex-direction: column;
-        padding-top: 25px;
-        width: 100%;
-    }
-
-
-    .cta-form textarea {
-        width: 100%;
-    }
-
-    /* .cta-form input {
-        width: 100%;
-    } */
-
-    .cta-form-name {
-        width: 100%;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .cta-form-email {
-        width: 100%;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .cta-form-phone {
-        width: 100%;
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .cta-form-message {
-        width: 100%;
-        grid-column: 1/4;
-        grid-row: 2/3;
     }
 
     .cta-form-submit {
-        grid-column: 2/3;
-        grid-row: 3/4;
-        justify-self: center;
+
         background-color: var(--sec-c);
     }
 
@@ -1463,7 +1441,10 @@ body {
     }
 
     .footer-cta {
-        height: 1%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* height: 1%; */
     }
 
     /* Modal Test */
@@ -1759,6 +1740,26 @@ body {
     .foot-third {
         align-self: center;
     }
+
+    .cta-container {
+        flex-direction: column;
+    }
+
+    .cta-left {
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-info-word {
+        align-items: center;
+    }
+
+
+
+    .cta-right {}
 
 }
 
@@ -2095,10 +2096,6 @@ body {
 
     .cta-form {
         padding-top: 25px;
-        row-gap: var(--r-gap);
-        column-gap: var(--c-gap);
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, auto);
         justify-items: center;
     }
 
@@ -2134,4 +2131,27 @@ body {
     .justappin {
         text-align: center;
     }
+
+    #cta {
+        grid-template-rows: var(--mrow);
+        padding-top: 40px;
+    }
+
+    .cta-container {
+        padding: 0;
+    }
+
+    .cta-left {
+        align-items: start;
+    }
+
+    .cta-form-top {
+        flex-direction: column;
+    }
+
+    .cta-form-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
