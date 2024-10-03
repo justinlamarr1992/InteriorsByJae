@@ -986,6 +986,8 @@ body {
         width: 75%;
     }
 
+    .member-social-icon {}
+
     .fab {
         padding-right: 10px;
         color: var(--tri-t);
