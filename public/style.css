@@ -978,9 +978,12 @@ body {
     }
 
     .member-social {
+        display: flex;
+        justify-content: space-around;
         grid-column: 2/3;
         grid-row: 3/4;
         align-self: center;
+        width: 75%;
     }
 
     .fab {
