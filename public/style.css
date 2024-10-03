@@ -2,12 +2,11 @@
 :root {
     --background: #0d0c0c;
 
-    --pri-t: #eeecec;
-    --sec-t: #999999;
-    --tri-t: #ffdc73;
-    --qua-t: #0d0c0c;
-
-    /* Color 1 */
+    /* Color 1  */
+    /* --pri-t: #eeecec;
+        --sec-t: #999999;
+        --tri-t: #ffdc73;
+        --qua-t: #0d0c0c;
     --c-gradient-lat: linear-gradient(to right,
             #ffdc73,
             #ffcf40,
@@ -19,12 +18,61 @@
             #ffcf40,
             #ffbf00,
             #bf9b30,
-            #a67c00);
+            #a67c00); 
     --pri-c: #ffdc73;
     --sec-c: #ffcf40;
     --tri-c: #ffbf00;
     --qua-c: #bf9b30;
     --qui-c: #a67c00;
+    --hex-c: #0d0c0c; */
+
+    /* Color 2 */
+    /* --pri-t: #eeecec;
+    --sec-t: #999999;
+    --tri-t: #CEB482;
+    --qua-t: #0d0c0c;
+    --c-gradient-lat: linear-gradient(to right,
+            #553D14,
+            #9e8861,
+            #FCEFD9,
+            #CEB482,
+            #815718);
+    --c-gradient-long: linear-gradient(to bottom,
+            #553D14,
+            #9e8861,
+            #FCEFD9,
+            #CEB482,
+            #815718);
+    --pri-c: #FCEFD9;
+    --sec-c: #CEB482;
+    --tri-c: #815718;
+    --qua-c: #9e8861;
+    --qui-c: #553D14;
+    --hex-c: #0d0c0c; */
+
+
+    /* Color 3 */
+    --pri-t: #eeecec;
+    --sec-t: #999999;
+    --tri-t: rgb(205, 181, 121);
+    --qua-t: #0d0c0c;
+    --c-gradient-lat: linear-gradient(to right,
+            /* #BF953F,
+            #FCF6BA, */
+            #B38728,
+            #FBF5B7,
+            #AA771C);
+    --c-gradient-long: linear-gradient(to bottom,
+            /* #BF953F,
+            #FCF6BA, */
+            #B38728,
+            #FBF5B7,
+            #AA771C);
+    --pri-c: #FBF5B7;
+    --sec-c: #FCF6BA;
+    --tri-c: #BF953F;
+    --qua-c: #B38728;
+    --qui-c: #AA771C;
     --hex-c: #0d0c0c;
 
     --navb-c: #0d0c0c;
@@ -212,7 +260,7 @@ body {
     input[type="submit"]:hover,
     input[type="reset"]:hover {
         background-color: var(--sec-t);
-        color: var(--pri-t);
+        color: var(--sec-t);
         transform: var(--grow);
         box-shadow: var(--box-shadow);
     }
@@ -647,7 +695,7 @@ body {
         background-color: var(--hex-c);
         width: 100%;
         height: auto;
-        border: 2px solid var(--pri-c);
+        border: 2px solid var(--tri-t);
         border-radius: var(--brad);
     }
 
@@ -808,7 +856,7 @@ body {
     }
 
     .blogs-date {
-        color: var(--pri-c);
+        color: var(--tri-t);
     }
 
     .blogs-description {
@@ -873,14 +921,12 @@ body {
         display: flex;
         justify-content: space-between;
         border-radius: var(--brad);
-        border: 2px solid var(--pri-c);
+        border: 2px solid var(--tri-t);
         width: 75%;
     }
 
     .team-member:hover {
-        opacity: 0.7;
         cursor: pointer;
-        transform: var(--grow);
     }
 
     .team-member:active {
@@ -907,7 +953,7 @@ body {
         grid-column: 2/3;
         grid-row: 1/2;
         align-self: center;
-        color: var(--pri-c);
+        color: var(--tri-t);
         padding-bottom: 20px;
     }
 
@@ -934,7 +980,7 @@ body {
 
     .fab {
         padding-right: 10px;
-        color: var(--sec-t);
+        color: var(--tri-t);
     }
 
     .fab:hover {
@@ -1990,9 +2036,6 @@ body {
 
     .team-member {
         flex-direction: column;
-        justify-content: space-between;
-        border-radius: var(--brad);
-        border: 2px solid var(--pri-c);
         width: 100%;
     }
 
