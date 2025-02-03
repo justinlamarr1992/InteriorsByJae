@@ -3,10 +3,10 @@
     --background: #0d0c0c;
 
     /* Color 1  */
-    /* --pri-t: #eeecec;
-        --sec-t: #999999;
-        --tri-t: #ffdc73;
-        --qua-t: #0d0c0c;
+    --pri-t: #eeecec;
+    --sec-t: #999999;
+    --tri-t: #95662E;
+    --qua-t: #0d0c0c;
     --c-gradient-lat: linear-gradient(to right,
             #ffdc73,
             #ffcf40,
@@ -18,13 +18,13 @@
             #ffcf40,
             #ffbf00,
             #bf9b30,
-            #a67c00); 
-    --pri-c: #ffdc73;
-    --sec-c: #ffcf40;
-    --tri-c: #ffbf00;
-    --qua-c: #bf9b30;
-    --qui-c: #a67c00;
-    --hex-c: #0d0c0c; */
+            #a67c00);
+    --pri-c: #AA782E;
+    --sec-c: #A7722B;
+    --tri-c: #95662E;
+    --qua-c: #6F471A;
+    --qui-c: #3B1D00;
+    --hex-c: #0d0c0c;
 
     /* Color 2 */
     /* --pri-t: #eeecec;
@@ -52,20 +52,20 @@
 
 
     /* Color 3 */
-    --pri-t: #eeecec;
+    /* --pri-t: #eeecec;
     --sec-t: #999999;
     --tri-t: rgb(205, 181, 121);
     --qua-t: #0d0c0c;
-    --c-gradient-lat: linear-gradient(to right,
-            /* #BF953F,
+    --c-gradient-lat: linear-gradient(to right, */
+    /* #BF953F,
             #FCF6BA, */
-            #B38728,
+    /* #B38728,
             #FBF5B7,
             #AA771C);
-    --c-gradient-long: linear-gradient(to bottom,
-            /* #BF953F,
+    --c-gradient-long: linear-gradient(to bottom, */
+    /* #BF953F,
             #FCF6BA, */
-            #B38728,
+    /* #B38728,
             #FBF5B7,
             #AA771C);
     --pri-c: #FBF5B7;
@@ -73,7 +73,7 @@
     --tri-c: #BF953F;
     --qua-c: #B38728;
     --qui-c: #AA771C;
-    --hex-c: #0d0c0c;
+    --hex-c: #0d0c0c; */
 
     --navb-c: #0d0c0c;
 
@@ -250,7 +250,8 @@ body {
     input[type="reset"] {
         border: none;
         border-radius: var(--brad);
-        color: var(--qua-t);
+        /* color: var(--qua-t); */
+        color: var(--pri-t);
         cursor: pointer;
         font-size: var(--wb);
         font-weight: bold;
@@ -587,7 +588,7 @@ body {
         font-family: var(--head-font);
         cursor: pointer;
         margin-right: auto;
-        color: var(--pri-c);
+        color: var(--tri-c);
     }
 
     .logo-text {
@@ -619,9 +620,9 @@ body {
 
     .header-cta-button {
         margin-left: 20px;
-        background: var(--c-gradient-lat);
+        background: var(--qua-c);
+        color: var(--pri-t);
         width: 170px;
-        /* background-color: orange; */
     }
 
     .mobile-link {
@@ -717,7 +718,8 @@ body {
 
     .hero-cta-button {
         width: 100%;
-        background: var(--c-gradient-lat);
+        background: var(--qua-c);
+        color: var(--pri-t);
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -1439,8 +1441,9 @@ body {
 
     /* Footer */
     footer {
-        background: var(--c-gradient-lat);
-        color: var(--qua-t);
+        background: var(--qua-c);
+        /* color: var(--qua-t); */
+        color: var(--pri-t);
         display: grid;
         grid-template-columns: var(--wcol);
         grid-template-rows: var(--wrow);
@@ -1476,7 +1479,7 @@ body {
     .footer-info-word {
         align-self: flex-start;
         justify-self: center;
-        color: var(--qua-t);
+        color: var(--pri-t);
     }
 
     .foot-third {
@@ -1492,7 +1495,7 @@ body {
 
     .justappin {
         text-decoration: none;
-        color: var(--qua-t);
+        color: var(--pri-t);
         text-align: center;
     }
 
@@ -1836,7 +1839,7 @@ body {
     footer {
         grid-template-columns: var(--mcol);
         grid-template-rows: var(--mrow);
-        background: var(--c-gradient-long);
+        /* background: var(--c-gradient-long); */
     }
 
     .footer-container {
