@@ -84,22 +84,31 @@ function changeToMember2() {
   return false;
 }
 
-// function sendEmail() {
-//   event.preventDefault();
-//   console.log(
-//     "Does it send ALL of it?",
-//     ctaName[0].value,
-//     ctaEmail[0].value,
-//     ctaNumber[0].value,
-//     ctaMessage[0].value
-//   );
-//   this.contact_number.value = (Math.random() * 100000) | 0;
-//   emailjs.sendForm("contact_service", "cta-form", this).then(
-//     function () {
-//       console.log("SUCCESS!");
-//     },
-//     function (error) {
-//       console.log("FAILED...", error);
-//     }
-//   );
-// }
+// Staging Carousel
+const slider = document.querySelector(".gallery");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", (_) => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mouseup", (_) => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
